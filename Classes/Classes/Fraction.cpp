@@ -1,12 +1,12 @@
 #include "Fraction.h"
 #include <iostream>
 
-void Fraction::printFraction() {
+void Fraction::printFraction() const {
     std::cout << this->numerator <<
     std::endl << this->denominator;
 }
 
-int Fraction::NOD() {
+int Fraction::NOD() const {
     int numerator   = this->numerator;
     int denominator = this->denominator;
     

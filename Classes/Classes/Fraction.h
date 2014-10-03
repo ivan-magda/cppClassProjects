@@ -19,7 +19,7 @@ public:
     
 #pragma mark - Public Methdos define -
     
-    void printFraction();
+    void printFraction() const;
     
     void changeToIrreducible();
 
@@ -27,7 +27,7 @@ public:
     
 private:
     
-    int NOD();
+    int NOD() const;
 };
 
 #endif /* defined(__Classes__Fraction__) */
