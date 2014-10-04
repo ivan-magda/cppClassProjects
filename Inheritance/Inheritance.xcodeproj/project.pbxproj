@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50E121F119DFF15B0008C8F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50E121F019DFF15B0008C8F2 /* main.cpp */; };
 		50E121F919DFF1880008C8F2 /* Fraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50E121F719DFF1880008C8F2 /* Fraction.cpp */; };
+		50E121FC19DFF44C0008C8F2 /* FractionOperations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50E121FA19DFF44C0008C8F2 /* FractionOperations.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		50E121F019DFF15B0008C8F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		50E121F719DFF1880008C8F2 /* Fraction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fraction.cpp; sourceTree = "<group>"; };
 		50E121F819DFF1880008C8F2 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		50E121FA19DFF44C0008C8F2 /* FractionOperations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FractionOperations.cpp; sourceTree = "<group>"; };
+		50E121FB19DFF44C0008C8F2 /* FractionOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FractionOperations.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				50E121F019DFF15B0008C8F2 /* main.cpp */,
-				50E121F719DFF1880008C8F2 /* Fraction.cpp */,
 				50E121F819DFF1880008C8F2 /* Fraction.h */,
+				50E121F719DFF1880008C8F2 /* Fraction.cpp */,
+				50E121FB19DFF44C0008C8F2 /* FractionOperations.h */,
+				50E121FA19DFF44C0008C8F2 /* FractionOperations.cpp */,
 			);
 			path = Inheritance;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50E121F119DFF15B0008C8F2 /* main.cpp in Sources */,
+				50E121FC19DFF44C0008C8F2 /* FractionOperations.cpp in Sources */,
 				50E121F919DFF1880008C8F2 /* Fraction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +244,7 @@
 				50E121F619DFF15B0008C8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

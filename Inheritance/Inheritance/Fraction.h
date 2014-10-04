@@ -1,7 +1,7 @@
-#ifndef __Classes__Fraction__
-#define __Classes__Fraction__
+#pragma onec
 
 #include <stdio.h>
+
 
 class Fraction {
     int numerator;
@@ -29,5 +29,3 @@ private:
     
     int NOD() const;
 };
-
-#endif /* defined(__Classes__Fraction__) */
