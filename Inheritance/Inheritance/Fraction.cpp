@@ -1,9 +1,13 @@
 #include "Fraction.h"
 #include <iostream>
 
+using namespace std;
+
 void Fraction::printFraction() const {
-    std::cout << this->numerator <<
-    std::endl << this->denominator;
+    cout << this->numerator <<
+    endl << "-" <<
+    endl <<
+            this->denominator;
 }
 
 int Fraction::NOD() const {

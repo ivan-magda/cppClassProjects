@@ -19,6 +19,7 @@ int main(int argc, const char * argv[]) {
     FractionOperations resultOfDivision = division1 / division2; // 32/35
     resultOfDivision.changeToIrreducible();
 
+    cout << endl;
     resultOfDivision.printFraction();
     cout << endl;
 

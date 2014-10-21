@@ -15,6 +15,7 @@ public:
         this->numerator   = 0;
         this->denominator = 0;
     }
+
     Fraction(const int& _numerator, const int& _denominator) : numerator(_numerator), denominator(_denominator) {}
     
 #pragma mark - Public Methdos define -

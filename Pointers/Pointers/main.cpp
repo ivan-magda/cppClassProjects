@@ -3,11 +3,11 @@
 #include <iomanip>
 
 #define LIMIT_OF_RANDOM_NUMBER (1000)
-#define CREATE_RANDOM_NUMBER(limit) {rand() % limit + 1}
+#define CREATE_RANDOM_NUMBER(limit) {rand() % limit - 500}
 
 #define ROWS    (7)
 #define COLLOMS (6)
-#define PLACEHOLDER_FOR_NUMBERS_SETW (3)
+#define PLACEHOLDER_FOR_NUMBERS_SETW (4)
 
 using namespace std;
 
@@ -30,9 +30,13 @@ int main(int argc, const char * argv[]) {
         
         fillArrayWithRandomNumbers(array[i], COLLOMS);
         printElementsOfArrayWithSize(array[i], COLLOMS);
-        cout << "   result : "
-             << countPositiveElemetsThatIndexGreaterThanIndexOfMaxElementAndFoldToNumber(array[i], COLLOMS, 3)
-             << endl;
+
+        if (i % 3 == 0) {
+            cout << "   result : "
+            << countPositiveElemetsThatIndexGreaterThanIndexOfMaxElementAndFoldToNumber(array[i], COLLOMS, 3)
+            << endl;
+        }
+        cout << endl;
     }
     
     for (int i = 0; i < ROWS; ++i)
@@ -87,7 +91,7 @@ int countPositiveElemetsThatIndexGreaterThanIndexOfMaxElementAndFoldToNumber(con
     int count = 0;
     int indexOfMaxElement = findIndexNumberOfMaxElementInArray(array, size);
     for (int i = (indexOfMaxElement != size) ? indexOfMaxElement + 1 : size; i < size; ++i) {
-        if ((array[i] > 0) && (i % foldNumber == 0)) {
+        if ((array[i] > 0)) {
             ++count;
         }
     }
