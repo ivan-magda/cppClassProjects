@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ctime>
 #include <iomanip>
+
 using namespace std;
 
 float countAverage(int *array, int size);
