@@ -55,7 +55,6 @@ void PrintAllFlights(const Flight *flights, const int size);
 
 ostream& operator << (ostream& os, const Flight& flight);
 
-
 int main(int argc, const char * argv[]) {
     Flight flights[NUMBER_FLIGHTS];
 
@@ -70,11 +69,32 @@ int main(int argc, const char * argv[]) {
     CreateFlight(flights[8], "Владивосток", "ЭК-511", Date(7, Date::Month::APR, 2015), time(14, 50), time(3, 0), 6500, true);
     CreateFlight(flights[9], "Бангкок", "KAR-9801", Date(7, Date::Month::APR, 2015), time(19, 00), time(10, 00), 15050, false);
 
-    SearchFlightByDestinationAndPrint(flights, "Москва", NUMBER_FLIGHTS);
+    int item = 0;
+    do {
+        cout << "1. Вывести доступные рейсы до введенного пункта назначения.\n"
+             << "2. Вывести все доступные рейсы.\n"
+             << "3. Выход\n";
 
-    cout << "\n************************************************\n";
-
-    PrintAllFlights(flights, NUMBER_FLIGHTS);
+        cin >> item;
+        switch (item) {
+            case 1: {
+                cout << "Введите пункт назначения:";
+                string destination;
+                cin >> destination;
+                SearchFlightByDestinationAndPrint(flights, destination, NUMBER_FLIGHTS);
+                break;
+            }
+            case 2: {
+                cout << "Все рейсы:" << endl;
+                PrintAllFlights(flights, NUMBER_FLIGHTS);
+                break;
+            }
+            case 3:
+                return 0;
+            default:
+                continue;
+        }
+    } while (item != 3);
 
     return 0;
 }
